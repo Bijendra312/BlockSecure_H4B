@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoSwap | Instant Cryptocurrency Exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BlockSecure</div>
+        <nav>
+            <ul>
+                <li><a href="#">Exchange</a></li>
+                <li><a href="#">Rates</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button class="btn-login">Login</button>
+            <button class="btn-signup">Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="exchange-container">
+            <div class="exchange-form">
+                <h1>Instant Cryptocurrency Exchange</h1>
+                <p>Swap between 100+ cryptocurrencies instantly</p>
+                
+                <div class="swap-box">
+                    <div class="from-currency">
+                        <label>You send</label>
+                        <div class="currency-selector">
+                            <select>
+                                <option value="btc">Bitcoin (BTC)</option>
+                                <option value="eth">Ethereum (ETH)</option>
+                                <option value="usdt">Tether (USDT)</option>
+                                <option value="xrp">Ripple (XRP)</option>
+                            </select>
+                            <input type="number" placeholder="0.00">
+                        </div>
+                    </div>
+                    
+                    <div class="swap-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    
+                    <div class="to-currency">
+                        <label>You receive</label>
+                        <div class="currency-selector">
+                            <select>
+                                <option value="eth">Ethereum (ETH)</option>
+                                <option value="btc">Bitcoin (BTC)</option>
+                                <option value="usdt">Tether (USDT)</option>
+                                <option value="xrp">Ripple (XRP)</option>
+                            </select>
+                            <input type="number" placeholder="0.00" readonly>
+                        </div>
+                    </div>
+                    
+                    <div class="rate-info">
+                        <p>1 BTC ≈ 15.5 ETH</p>
+                        <p>No extra fees</p>
+                    </div>
+                    
+                    <button class="btn-exchange">Exchange Now</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="market-data">
+            <div class="market-tables">
+                <h2>Current Market Rates</h2>
+                
+                <div class="tables-container">
+                    <table class="crypto-table">
+                        <thead>
+                            <tr>
+                                <th>Coin</th>
+                                <th>Price</th>
+                                <th>24h Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fab fa-bitcoin"></i> Bitcoin</td>
+                                <td>$42,850.30</td>
+                                <td class="positive">+2.34%</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-ethereum"></i> Ethereum</td>
+                                <td>$2,850.20</td>
+                                <td class="positive">+1.56%</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-coins"></i> Tether</td>
+                                <td>$1.00</td>
+                                <td class="neutral">0.00%</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-coins"></i> Ripple</td>
+                                <td>$0.56</td>
+                                <td class="negative">-0.78%</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-coins"></i> Cardano</td>
+                                <td>$1.25</td>
+                                <td class="positive">+3.12%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <table class="crypto-table">
+                        <thead>
+                            <tr>
+                                <th>Pair</th>
+                                <th>Rate</th>
+                                <th>24h Volume</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BTC/ETH</td>
+                                <td>15.5 ETH</td>
+                                <td>25,420 BTC</td>
+                            </tr>
+                            <tr>
+                                <td>ETH/USDT</td>
+                                <td>2,850 USDT</td>
+                                <td>180,500 ETH</td>
+                            </tr>
+                            <tr>
+                                <td>BTC/USDT</td>
+                                <td>42,850 USDT</td>
+                                <td>12,800 BTC</td>
+                            </tr>
+                            <tr>
+                                <td>XRP/BTC</td>
+                                <td>0.000013 BTC</td>
+                                <td>42M XRP</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BlockSecure. Hackathon Project.</p>
+    </footer>
+</body>
+</html>

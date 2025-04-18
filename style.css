@@ -1,0 +1,306 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2962ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.user-actions button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-login {
+    background: transparent;
+    color: #2962ff;
+}
+
+.btn-signup {
+    background: #2962ff;
+    color: white;
+}
+
+/* Exchange Form Styles */
+.exchange-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.exchange-form h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.exchange-form p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.swap-box {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.from-currency, .to-currency {
+    margin-bottom: 20px;
+}
+
+.currency-selector {
+    display: flex;
+    margin-top: 8px;
+}
+
+.currency-selector select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    background: #f9f9f9;
+    flex: 1;
+}
+
+.currency-selector input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    flex: 2;
+    text-align: right;
+    font-size: 16px;
+}
+
+.swap-icon {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.swap-icon i {
+    background: #2962ff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rate-info {
+    margin: 20px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.btn-exchange {
+    width: 100%;
+    padding: 15px;
+    background: #2962ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Market Data Styles */
+.market-data {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.market-tables h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.tables-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.crypto-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.crypto-table th, .crypto-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.crypto-table th {
+    background: #f9f9f9;
+    font-weight: 600;
+    color: #555;
+}
+
+.crypto-table tr:last-child td {
+    border-bottom: none;
+}
+
+.crypto-table i {
+    margin-right: 8px;
+    color: #2962ff;
+}
+
+.fa-bitcoin {
+    color: #f7931a !important;
+}
+
+.fa-ethereum {
+    color: #627eea !important;
+}
+
+.positive {
+    color: #26a69a;
+}
+
+.negative {
+    color: #ef5350;
+}
+
+.neutral {
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        margin: 15px 0;
+    }
+    
+    .user-actions {
+        margin-top: 10px;
+    }
+    
+    .tables-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .swap-box {
+        padding: 20px;
+    }
+    
+    .currency-selector {
+        flex-direction: column;
+    }
+    
+    .currency-selector select, 
+    .currency-selector input {
+        width: 100%;
+        border-radius: 6px;
+    }
+    
+    .currency-selector select {
+        border-radius: 6px 6px 0 0;
+        margin-bottom: -1px;
+    }
+    
+    .currency-selector input {
+        border-radius: 0 0 6px 6px;
+        border-top: none;
+    }
+}
+
+/* Hover Effects and Animations */
+.btn-login:hover {
+    background: #f0f5ff;
+}
+
+.btn-signup:hover, .btn-exchange:hover {
+    background: #1a53ff;
+    transform: translateY(-1px);
+}
+
+.swap-icon i:hover {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.crypto-table tr:hover {
+    background: #f9f9f9;
+}
+
+button {
+    transition: all 0.2s ease;
+}
+
+/* Loading animation for demo purposes */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.loading {
+    animation: pulse 1.5s infinite;
+}
