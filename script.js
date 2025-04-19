@@ -228,11 +228,11 @@ const navLinks = {
 // Sections Data
 const sections = {
     about: {
-        title: "About CryptoSwap",
+        title: "About BlockSecure",
         html: `
             <section class="about-section section-active">
                 <div class="about-header">
-                    <h1>Welcome to CryptoSwap</h1>
+                    <h1>Welcome to BlockSecure</h1>
                     <p>The fastest and most secure way to exchange cryptocurrencies</p>
                 </div>
                 
@@ -273,7 +273,7 @@ const sections = {
         `
     },
     rates: {
-        title: "Market Rates | CryptoSwap",
+        title: "Market Rates | BlockSecure",
         html: `
             <section class="market-data section-active">
                 <h2>Current Market Rates <small>(Updated: <span id="last-updated">Loading...</span>)</small></h2>
@@ -301,7 +301,7 @@ const sections = {
         init: initRatesSection
     },
     exchange: {
-        title: "Exchange | CryptoSwap",
+        title: "Exchange | BlockSecure",
         html: `
             <section class="exchange-container section-active">
                 <div class="exchange-form">
