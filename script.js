@@ -299,9 +299,9 @@ const sections = {
             </section>
         `,
         init: initRatesSection
-    },
+    },    
     exchange: {
-        title: "Exchange | BlockSecure",
+        title: "Exchange | CryptoSwap",
         html: `
             <section class="exchange-container section-active">
                 <div class="exchange-form">
@@ -309,8 +309,42 @@ const sections = {
                     <p>Swap between 100+ cryptocurrencies instantly</p>
                     
                     <div class="swap-box">
-                        <!-- Your existing exchange form HTML -->
-                        ${document.querySelector('.exchange-form')?.innerHTML || ''}
+                        <div class="from-currency">
+                            <label>You send</label>
+                            <div class="currency-selector">
+                                <select class="from-currency-select">
+                                    <option value="bitcoin">Bitcoin (BTC)</option>
+                                    <option value="ethereum">Ethereum (ETH)</option>
+                                    <option value="tether">Tether (USDT)</option>
+                                    <option value="ripple">XRP (XRP)</option>
+                                </select>
+                                <input type="number" class="from-amount" placeholder="0.00">
+                            </div>
+                        </div>
+                        
+                        <div class="swap-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        
+                        <div class="to-currency">
+                            <label>You receive</label>
+                            <div class="currency-selector">
+                                <select class="to-currency-select">
+                                    <option value="ethereum">Ethereum (ETH)</option>
+                                    <option value="bitcoin">Bitcoin (BTC)</option>
+                                    <option value="tether">Tether (USDT)</option>
+                                    <option value="ripple">XRP (XRP)</option>
+                                </select>
+                                <input type="number" class="to-amount" placeholder="0.00" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="rate-info">
+                            <p class="current-rate">1 BTC ≈ 15.5 ETH</p>
+                            <p>No extra fees</p>
+                        </div>
+                        
+                        <button class="btn-exchange">Exchange Now</button>
                     </div>
                 </div>
             </section>
