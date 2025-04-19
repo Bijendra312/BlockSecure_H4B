@@ -301,7 +301,7 @@ const sections = {
         init: initRatesSection
     },    
     exchange: {
-        title: "Exchange | CryptoSwap",
+        title: "Exchange | BlockSecure",
         html: `
             <section class="exchange-container section-active">
                 <div class="exchange-form">
