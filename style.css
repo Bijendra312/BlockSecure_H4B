@@ -304,3 +304,116 @@ button {
 .loading {
     animation: pulse 1.5s infinite;
 }
+
+/* Add to your existing CSS */
+#crypto-table-body img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.loading {
+    color: #999;
+    font-style: italic;
+}
+
+.positive {
+    color: #26a69a;
+}
+
+.negative {
+    color: #ef5350;
+}
+
+/* Price chart container */
+.chart-container {
+    margin-top: 30px;
+    height: 300px;
+}
+
+/* Page Transition Animations */
+.section-active {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* About Page Styles */
+.about-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #2962ff;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #2962ff;
+    margin-bottom: 15px;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #2962ff;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: rotate(360deg);
+}
+
+/* Active Nav Link */
+nav ul li a.active {
+    color: #2962ff;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2962ff;
+    animation: underline 0.3s ease;
+}
+
+@keyframes underline {
+    from { width: 0; }
+    to { width: 100%; }
+}
